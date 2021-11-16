@@ -1,0 +1,36 @@
+package selfProgramming;
+
+public class MyIncome {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		double income = 1500;
+		final double MIN_LEVEL = 1000;
+		int age = 50;
+		double amount = 500;
+		double balance = 1500;
+		
+		//single statement
+		if ((amount <= 1000.0) && (amount <= balance))
+			balance = balance - amount;
+			System.out.println("1. Acct new balance = " + balance);
+		//block statement	
+		if((amount <= 1000.0) && (amount <= balance)) {
+			balance = balance - amount;
+			System.out.println("2. Acct new balance = " + balance);
+		}
+		//block statement
+		if((amount <= 1000.0) && (amount <= balance)) {
+		balance = balance + 500.0;
+		System.out.println("3. Acct new balance = " + balance);
+		}
+			
+	}
+
+}
+
+Output:
+1. Acct new balance = 1000.0
+2. Acct new balance = 500.0
+3. Acct new balance = 1000.0
