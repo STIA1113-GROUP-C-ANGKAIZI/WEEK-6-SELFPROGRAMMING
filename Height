@@ -1,0 +1,34 @@
+package selfProgramming;
+import java.util.Scanner;
+public class Height {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int height1, height2;
+		
+		Scanner scan = new Scanner (System.in);
+		System.out.println("PLEASE KEY IN YOUR HEIGHT");
+		height1 = scan.nextInt();
+		System.out.println("PLEASE KEY IN YOUR FRIEND'S HEIGHT");
+		height2 = scan.nextInt();
+		
+		if (height1==height2) {
+			System.out.println("You two have the same height.");
+		}
+		else if (height1>height2) {
+			System.out.println("You are higher than your friend.");
+		}
+		else if (height1<height2) {
+			System.out.println("Your friend are higher than you.");
+		}
+		
+	}
+
+}
+
+Output:
+PLEASE KEY IN YOUR HEIGHT
+170
+PLEASE KEY IN YOUR FRIEND'S HEIGHT
+180
+Your friend are higher than you.
