@@ -1,0 +1,73 @@
+package defaultPackage;
+import java.util.Scanner;
+public class IfElse2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int MathMark, ScienceMark;
+		double purata;
+		char grade = 0;
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Your Math Mark:");
+		MathMark = scan.nextInt();
+		System.out.println("Your Science Mark");
+		ScienceMark = scan.nextInt();
+		
+		if (MathMark >= 50){
+			System.out.println("Math is pass");
+		}
+		else {
+			System.out.println("Math is fail");
+		}
+		
+		if (ScienceMark >= 50) {
+			System.out.println("Science is pass");
+		}
+		else {
+			System.out.println("Science is fail");
+		}
+		
+		if ((MathMark >= 50) && (ScienceMark >= 50)) 
+			System.out.println("Lulus kedua-dua subjek");
+		else if ((MathMark >= 50) && (ScienceMark < 50))
+			System.out.println("Lulus Math Sahaja");
+		else if ((MathMark <50) && (ScienceMark >= 50))
+			System.out.println("Lulus Science Sahaja");
+		else 
+			System.out.println("Gagal kedua-dua subjek");
+		
+		if (MathMark > ScienceMark) {
+			System.out.println("Math Mark more then Science Mark");
+		}
+		else {
+			System.out.println("Science Mark more than Math Mark");
+		}
+		
+		purata = (MathMark + ScienceMark)/2;
+				System.out.println("purata markah = " + purata);
+		if (purata>=80)
+			grade = 'A';
+		else if (purata>=60)
+			grade = 'B';
+		else if (purata>=50)
+			grade = 'C';
+		else
+			grade = 'F';
+			System.out.println("Your grade:" + grade);
+	}
+
+}
+
+
+Output:
+Your Math Mark:
+60
+Your Science Mark
+40
+Math is pass
+Science is fail
+Lulus Math Sahaja
+Math Mark more then Science Mark
+purata markah = 50.0
+Your grade:C
