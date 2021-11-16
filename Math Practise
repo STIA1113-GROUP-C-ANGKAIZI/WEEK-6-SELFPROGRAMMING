@@ -1,0 +1,33 @@
+package selfProgramming;
+import java.util.Scanner;
+public class MathPractise {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a, b, c;
+		double formula;
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Please enter number (a):");
+		a = scan.nextInt();
+		System.out.println("Please enter number (b):");
+		b = scan.nextInt();
+		System.out.println("Please enter number (c):");
+		c = scan.nextInt();
+		
+		formula = (-b + Math.sqrt(b * b - 4 * a * c)) / (2 * a);
+		
+		System.out.println("The answer is " + formula);
+	}
+
+}
+
+Output:
+Please enter number (a):
+6
+Please enter number (b):
+-17
+Please enter number (c):
+12
+The answer is 1.5
